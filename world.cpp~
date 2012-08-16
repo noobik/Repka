@@ -33,28 +33,10 @@ void World::Draw()
 		std::cout<<std::endl;
 
 };	
-}
-
-
-
-
 
 vrag::vrag()
 {
-void Die();
-{
-
 };
-void Ap();
-{
-
-};
-void vdraw();
-{
-
-};
-}
-
 
 
 

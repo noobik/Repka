@@ -1,0 +1,16 @@
+#include<vector>
+
+class vrag
+{
+public:
+	vrag();
+	void Die();
+	void Ap();
+	void vdraw();
+private:
+	int health;
+	int m_x;
+	int m_y;
+	int m_body;
+	
+};               
