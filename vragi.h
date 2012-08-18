@@ -1,20 +1,18 @@
+#ifndef vragi_h
+#define vragi_h
 #include<vector>
-
+#include"world.h"
 class vrag
 {
 public:
-	virtual ~vrag();
-	void Die();
-	void Ap();
-	void vdraw();
-	void sound()
-		{
-		std::cout<<"я тебя покараю!;
-		}
+	vrag();
+	void Move();
+	int get_pos();
 private:
 	int health;
 	int m_x;
 	int m_y;
 	int m_body;
 	
-};               
+}; 
+#endif              

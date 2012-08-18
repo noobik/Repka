@@ -1,12 +1,16 @@
+#ifndef world_h
+#define world_h
 #include<vector>
-
-class World
+#include"vragi.h"
+class world
 {
 public:
-	World();
+	world();
          void Draw();
+	void world_up();
 private:
 	std::vector<std::vector<char> > m_world;
 	std::vector<vrag> m_vragi;
 
-};               
+};
+#endif                

@@ -1,8 +1,10 @@
 #include<vector>
 #include"world.h"
+#include"vragi.h"
 #include<iostream>
-World::World()
+world::world()
 {
+
 	std::vector<char> vector;
 	for(int i=0;i<20;i++)
 		vector.push_back('.');
@@ -11,32 +13,63 @@ World::World()
 		m_world.push_back(vector);
 	}
 
-	std::vector<vrag> en_vector;
-	for(int i=0;i<20;i++)
-		en_vector.push_back('vrag');
+	for(int i=0;i<10;i++)
+		m_vragi.push_back(vrag());
 };
-void World::Draw()
+void world::Draw()
 {
+
 	for(int i=0;i<20;i++)
 	{
-		for(int j=0;j<20;j++)
+		for(int n=0;n<20;n++)
 		{
-		std::cout<<m_world[i][j];
+			std::cout<<m_world[i][n];
 		}
 		std::cout<<std::endl;
 	}
+};
+void world::world_up()
+{
+std::cout<< m_vragi.size()<<std::endl;
+	for(int i=0;i<10;i++)
+	{
 
+	m_vragi[i].Move();
+	
+	}
+	std::vector<char> vector;
+	std::vector<int> y_pos;
 	for(int i=0;i<20;i++)
-		{
-		std::cout<<m_world[i][j];
-		}
-		std::cout<<std::endl;
-
+		vector.push_back('.');
+	for(int i=0;i<20;i++)
+		m_world[i] = vector;
+	for(int i=0;i<10;i++)
+		y_pos.push_back(m_vragi[i].get_pos());
+	this->Draw()
 };	
+
+
+
+
 
 vrag::vrag()
 {
-};
+	m_y = 0;
+}
+
+void vrag::Move()
+{
+	m_y = m_y + 1;
+}
+
+int vrag::get_pos()
+{
+	return m_y;
+}
+
+
+
+
 
 
 
