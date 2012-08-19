@@ -11,6 +11,28 @@ public:
 private:
 	std::vector<std::vector<char> > m_world;
 	std::vector<vrag> m_vragi;
+	
 
 };
+ /*
+class bullet
+{
+public:
+	bullet();
+
+
+
+private:
+
+};
+
+class gun
+{
+public:
+	gun();
+
+private:
+
+};
+*/
 #endif                

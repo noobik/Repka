@@ -15,4 +15,25 @@ private:
 	int m_body;
 	
 }; 
+/*
+class bullet
+{
+public:
+	bullet();
+	
+
+
+private:
+
+};
+
+class gun
+{
+public:
+	gun();
+
+private:
+
+};
+*/
 #endif              
