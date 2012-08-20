@@ -2,37 +2,19 @@
 #define world_h
 #include<vector>
 #include"vragi.h"
-class world
+#include"bullet.h"
+#include"gun.h"
+class World
 {
 public:
-	world();
+	World();
          void Draw();
-	void world_up();
+	void World_up();
 private:
 	std::vector<std::vector<char> > m_world;
 	std::vector<vrag> m_vragi;
-	
-
-};
- /*
-class bullet
-{
-public:
-	bullet();
-
-
-
-private:
-
+	std::vector<bullet> m_bullet;
 };
 
-class gun
-{
-public:
-	gun();
-
-private:
-
-};
-*/
-#endif                
+#endif               
+ 

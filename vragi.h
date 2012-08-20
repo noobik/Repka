@@ -1,39 +1,23 @@
 #ifndef vragi_h
 #define vragi_h
 #include<vector>
+#include"bullet.h"
 #include"world.h"
+#include"gun.h"
 class vrag
 {
 public:
 	vrag();
 	void Move();
-	int get_pos();
+	int GetX();
+	int GetY();
+	char GetS();
 private:
 	int health;
 	int m_x;
 	int m_y;
-	int m_body;
+	int m_symbol;
 	
 }; 
-/*
-class bullet
-{
-public:
-	bullet();
-	
 
-
-private:
-
-};
-
-class gun
-{
-public:
-	gun();
-
-private:
-
-};
-*/
 #endif              

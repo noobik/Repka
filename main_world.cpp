@@ -1,11 +1,15 @@
-#include"world.h"
 #include"vragi.h"
+#include"bullet.h"
+#include"world.h"
+#include"gun.h""
 #include<iostream>
 int main()
 {
-world myworld;
-for(int i=0; i<5; i++) {
-myworld.world_up();
+World myworld;
+for(int i=0; i<20; i++)
+{
+
+myworld.World_up();
 std::cout << std::endl;
 usleep(500000);
 }

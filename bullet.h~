@@ -1,0 +1,22 @@
+#ifndef bullet_h
+#define bullet_h
+#include<vector>
+#include"vragi.h"
+#include"bullet.h"
+#include"world.h"
+
+class Bullet
+{
+public:
+	Bullet();
+	void b_move();
+	int b_getx();
+	int b_gety();
+	char b_gets();
+	void world_up();
+private:
+	
+};
+
+#endif
+

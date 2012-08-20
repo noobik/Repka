@@ -1,0 +1,19 @@
+#ifndef gun_h
+#define gun_h
+#include<vector>
+#include"vragi.h"
+#include"bullet.h"
+#include"world.h"
+class Gun
+{
+public:
+	Gun();
+	shot();
+	void world_up();
+private:
+	
+};
+
+#endif
+
+
