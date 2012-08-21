@@ -12,11 +12,13 @@ public:
 	int GetX();
 	int GetY();
 	char GetS();
+	bullet * shot();
 private:
 	int health;
 	int m_x;
 	int m_y;
 	int m_symbol;
+	gun * m_gun;
 	
 }; 
 

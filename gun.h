@@ -8,10 +8,8 @@ class gun
 {
 public:
 	gun();
-	shot();
-	void world_up();
-private:
-	
+	bullet * shot(int ix,int iy);
+private:	
 };
 
 #endif

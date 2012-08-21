@@ -3,10 +3,11 @@
 #include"gun.h"
 #include"bullet.h"
 #include<iostream>
-bullet::bullet()
+bullet::bullet(int ix,int iy)
 {
-	b_y=m_y+1;
-	b_y=m_x;
+	
+	b_y=iy+1;
+	b_x=ix;
 	b_symbol='*';
 }
 void bullet::b_move()

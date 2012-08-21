@@ -3,8 +3,7 @@
 #include"world.h"
 #include"gun.h"
 #include<iostream>
-gun::shot()
+bullet * gun::shot(int ix,int iy)
 {
-	for(int i=0;i<20;i++)
-		m_bullet.push_back(bullet());
+	return bullet(ix,iy);
 }

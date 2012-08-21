@@ -8,7 +8,7 @@
 class Bullet
 {
 public:
-	Bullet();
+	Bullet(int ix,int iy);
 	void b_move();
 	int b_getx();
 	int b_gety();

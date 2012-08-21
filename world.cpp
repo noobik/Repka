@@ -16,8 +16,6 @@ World::World()
 	
 	for(int i=0;i<20;i++)
 		m_vragi.push_back(vrag());
-	
-
 };
 void World::Draw()
 {
@@ -28,10 +26,7 @@ void World::Draw()
 			std::cout<<m_world[i][j];	
 		}
 		std::cout<<std::endl;
-	}
-
-	
-	
+	}	
 };
 
 void World::World_up()
@@ -65,12 +60,22 @@ void World::World_up()
 		m_world[i] = vector;
 
 	for(int i=0;i<m_bullet.size();i++) {
-		int z = m_bullet[i].b_gety(); // Запоминаем y-позиции пули.
-		int n = m_bullet[i].b_getx();	
-		m_world[z][n] = m_bullet[i].b_gets();	
+		int iy = m_bullet[i].b_gety(); // Запоминаем y-позиции пули.
+		int ix = m_bullet[i].b_getx();	
+		m_world[iy][ix] = m_bullet[i].b_gets();	
 	}
 	this->Draw();	
 	
-};	
+};
+void World::Strike()
+{
+	for(int i=0;i<20;i++)
+	m_bullet.push_back(gun);
+};
+
+
+
+
+	
 
 

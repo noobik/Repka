@@ -10,6 +10,7 @@ public:
 	World();
          void Draw();
 	void World_up();
+	void Strike();
 private:
 	std::vector<std::vector<char> > m_world;
 	std::vector<vrag> m_vragi;

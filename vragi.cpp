@@ -12,14 +12,17 @@ vrag::vrag()
 	m_y=0;
 	health=100;
 	m_symbol='@';
+	m_gun = new gun();
 }
+
+bullet * vrag::shot()
+{
+	return gun->shot( m_y + 1, m_x );
+}
+
 void vrag::Move()
 {
 	m_y = m_y + 1;
-	if(m_y>20)
-		{
-		m_y = 1;
-		}
 }
 
 int vrag::GetY()
